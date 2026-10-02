@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f6f4ee;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b4b43;
+  padding: 14px 24px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.nama-sekolah {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #e2a33d;
+}
+
+.tombol-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('gambar/nav.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 240px 20px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.daftar-ekskul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.kartu {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.kartu:hover {
+  border-color: #1b4b43;
+}
+
+.ikon {
+  font-size: 30px;
+  margin: 0 0 8px;
+}
+
+.link-kembali {
+  display: block;
+  padding: 16px 24px 0;
+  color: #1b4b43;
+  text-decoration: none;
+}
+
+.hero-form {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 10px;
+}
+
+.ikon-besar {
+  font-size: 40px;
+  margin: 0;
+}
+
+.halaman-form {
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('background.jpg');
+  background-color: #1b4b43;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.halaman-form .link-kembali {
+  color: white;
+}
+
+.form-utama {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 60px;
+}
+
+.kotak-form {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.kotak-form label {
+  display: block;
+  font-weight: bold;
+  margin: 14px 0 6px;
+}
+
+.kotak-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.kotak-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.kotak-form select.benar,
+.kotak-form input.benar {
+  border-color: green;
+}
+
+.kotak-form select.salah,
+.kotak-form input.salah {
+  border-color: red;
+}
+
+.pesan {
+  font-size: 13px;
+  color: #777;
+  margin: 4px 0 0;
+}
+
+.pesan {
+  display: none;
+}
+
+.pesan-benar {
+  display: block;
+  color: green;
+}
+
+.pesan-salah {
+  display: block;
+  color: red;
+}
+
+.kotak-password {
+  display: flex;
+}
+
+.kotak-password input {
+  flex: 1;
+}
+
+.kotak-password button {
+  margin-left: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tombol-daftar:disabled {
+  background-color: #777;
+  cursor: wait;
+}
+
+.tombol-daftar {
+  width: 100%;
+  background-color: #1b4b43;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pesan-sukses {
+  display: none;
+  background-color: #e6f4ea;
+  color: green;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #1b4b43;
+  color: white;
+  padding: 30px 24px;
+}
+
+.footer h3 {
+  color: #e2a33d;
+  margin-top: 0;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer-kanan {
+  text-align: right;
+}
+
+.link-maps {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: bold;
+  color: #e2a33d;
+}
+
+@media (max-width: 700px) {
+  .tombol-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #3d675f;
+  }
+
+  .menu.tampil {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 12px;
+    margin: 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-kanan {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-utama {
+    padding: 20px 12px 40px;
+  }
+
+  .kotak-form {
+    padding: 20px 16px;
+  }
+
+  .kotak-form input,
+  .kotak-form select {
+    font-size: 16px; 
+  }
+}

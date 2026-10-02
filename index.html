@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendaftaran Ekstrakurikuler</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-area">
+      <img src="gambar/logo smk.jpeg" alt="Logo SMKN Tengaran" class="logo">
+      <span class="nama-sekolah">SMKN Tengaran</span>
+    </div>
+
+    <button class="tombol-menu" onclick="bukaMenu()">&#9776;</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Ekstrakurikuler</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#lokasi">Lokasi</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Pendaftaran Ekstrakurikuler</h1>
+    <p>Pilih salah satu ekstrakurikuler di bawah ini untuk mendaftar.</p>
+  </section>
+
+  <main class="daftar-ekskul">
+
+    <div class="kartu" onclick="pilihEkskul('Pramuka')">
+      <p class="ikon">🏕️</p>
+      <h3>Pramuka</h3>
+      <p>Kegiatan setiap hari Jumat</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Paskibra')">
+      <p class="ikon">🚩</p>
+      <h3>Paskibra</h3>
+      <p>Latihan baris-berbaris</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Rebana')">
+      <p class="ikon">🥁</p>
+      <h3>Rebana</h3>
+      <p>Latihan musik rebana & sholawat</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Rohis')">
+      <p class="ikon">🕌</p>
+      <h3>Rohis</h3>
+      <p>Kajian dan kegiatan keislaman</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Foster')">
+      <p class="ikon">🏍</p>
+      <h3>Foster</h3>
+      <p>Latihan tentang keamanan bermotor</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('PMR')">
+      <p class="ikon">➕</p>
+      <h3>PMR</h3>
+      <p>Pelatihan pertolongan pertama</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Voly')">
+      <p class="ikon">🏐</p>
+      <h3>Voly</h3>
+      <p>Latihan bola voli</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Futsal')">
+      <p class="ikon">⚽</p>
+      <h3>Futsal</h3>
+      <p>Latihan setiap Selasa & Kamis</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Jepang')">
+      <p class="ikon">🎌</p>
+      <h3>Jepang</h3>
+      <p>Belajar bahasa & budaya Jepang</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Jurnalis')">
+      <p class="ikon">📰</p>
+      <h3>Jurnalis</h3>
+      <p>Menulis berita & dokumentasi</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('MTQ')">
+      <p class="ikon">📖</p>
+      <h3>MTQ</h3>
+      <p>Latihan tilawah & seni baca Al-Qur'an</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Drumband')">
+      <p class="ikon">🎺</p>
+      <h3>Drumband</h3>
+      <p>Latihan marching band sekolah</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Tari')">
+      <p class="ikon">💃</p>
+      <h3>Tari</h3>
+      <p>Latihan tari tradisional & modern</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Pencak Silat')">
+      <p class="ikon">🥋</p>
+      <h3>Pencak Silat</h3>
+      <p>Latihan bela diri pencak silat</p>
+    </div>
+
+    <div class="kartu" onclick="pilihEkskul('Padus')">
+      <p class="ikon">🎤</p>
+      <h3>Padus</h3>
+      <p>Latihan paduan suara</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-kiri" id="kontak">
+      <h3>Kontak</h3>
+      <p>Telepon: <a href="tel:+622983334455">(0298) 333-4455</a></p>
+      <p>Email: <a href="mailto:info@smkntengaran.sch.id">info@smkntengaran.sch.id</a></p>
+    </div>
+    <div class="footer-kanan" id="lokasi">
+      <h3>Lokasi</h3>
+      <p>Jl. Darun Naim, Karangduren, Tengaran, Kab. Semarang</p>
+      <a class="link-maps" href="https://www.google.com/maps/search/?api=1&query=SMK+Negeri+Tengaran" target="_blank">Lihat di Google Maps</a>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

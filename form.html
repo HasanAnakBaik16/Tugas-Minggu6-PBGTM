@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pendaftaran</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="halaman-form">
+
+  <header class="header">
+    <div class="logo-area">
+      <img src="gambar/logo smk.jpeg" alt="Logo SMKN Tengaran" class="logo">
+      <span class="nama-sekolah">SMKN Tengaran</span>
+    </div>
+
+    <button class="tombol-menu" onclick="bukaMenu()">&#9776;</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Ekstrakurikuler</a>
+      <a href="index.html#kontak">Kontak</a>
+      <a href="index.html#lokasi">Lokasi</a>
+    </nav>
+  </header>
+
+  <a href="index.html" class="link-kembali">&larr; Kembali pilih ekstrakurikuler</a>
+
+  <section class="hero-form" id="heroForm">
+    <p class="ikon-besar" id="ikonEkskul">⚽</p>
+    <h1 id="namaEkskul">Ekstrakurikuler</h1>
+    <p id="deskripsiEkskul">Deskripsi akan muncul di sini.</p>
+  </section>
+
+  <main class="form-utama">
+    <div class="kotak-form">
+      <h2>Formulir Pendaftaran</h2>
+      <p>Lengkapi data berikut untuk bergabung.</p>
+
+      <form id="formDaftar" novalidate>
+
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+        <p class="pesan" id="pesanNama">Minimal 3 karakter.</p>
+
+        <label for="ekskul">Ekstrakurikuler</label>
+        <select id="ekskul">
+          <option value="Pramuka">Pramuka</option>
+          <option value="Paskibra">Paskibra</option>
+          <option value="Rebana">Rebana</option>
+          <option value="Rohis">Rohis</option>
+          <option value="Foster">Foster</option>
+          <option value="PMR">PMR</option>
+          <option value="Voly">Voly</option>
+          <option value="Futsal">Futsal</option>
+          <option value="Jepang">Jepang</option>
+          <option value="Jurnalis">Jurnalis</option>
+          <option value="MTQ">MTQ</option>
+          <option value="Drumband">Drumband</option>
+          <option value="Tari">Tari</option>
+          <option value="Pencak Silat">Pencak Silat</option>
+          <option value="Padus">Padus</option>
+        </select>
+        <p class="pesan" id="pesanEkskul">Pilih ekstrakurikuler.</p>
+
+        <label for="kelas">Kelas</label>
+        <select id="kelas">
+          <option value="">-- Pilih kelas --</option>
+          <option value="X">X</option>
+          <option value="XI">XI</option>
+          <option value="XII">XII</option>
+        </select>
+        <p class="pesan" id="pesanKelas">Pilih kelas kamu.</p>
+
+        <label for="jurusan">Jurusan / Rombel</label>
+        <input type="text" id="jurusan" placeholder="Contoh: TKJ 1">
+        <p class="pesan" id="pesanJurusan">Tidak boleh kosong.</p>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="nama@gmail.com">
+        <p class="pesan" id="pesanEmail">Gunakan format email yang benar.</p>
+
+        <label for="password">Password</label>
+        <div class="kotak-password">
+          <input type="password" id="password" placeholder="Minimal 8 karakter">
+          <button type="button" onclick="lihatPassword('password', this)">&#128065;</button>
+        </div>
+        <p class="pesan" id="pesanPassword">Minimal 8 karakter.</p>
+
+        <label for="konfirmasi">Konfirmasi Password</label>
+        <div class="kotak-password">
+          <input type="password" id="konfirmasi" placeholder="Ulangi password">
+          <button type="button" onclick="lihatPassword('konfirmasi', this)">&#128065;</button>
+        </div>
+        <p class="pesan" id="pesanKonfirmasi">Harus sama dengan password.</p>
+
+        <button type="submit" class="tombol-daftar">Daftar Sekarang</button>
+
+        <p class="pesan-sukses" id="pesanSukses">✅ Pendaftaran berhasil!</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-kiri">
+      <h3>Kontak</h3>
+      <p>Telepon: <a href="tel:+622983334455">(0298) 333-4455</a></p>
+      <p>Email: <a href="mailto:info@smkntengaran.sch.id">info@smkntengaran.sch.id</a></p>
+    </div>
+    <div class="footer-kanan">
+      <h3>Lokasi</h3>
+      <p>Jl. Darun Naim, Karangduren, Tengaran, Kab. Semarang</p>
+      <a class="link-maps" href="https://www.google.com/maps/search/?api=1&query=SMK+Negeri+Tengaran" target="_blank">Lihat di Google Maps</a>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
